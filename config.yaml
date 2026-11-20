@@ -1,0 +1,8 @@
+# Only run against assets listed in the bug bounty program's in-scope list.
+scope:
+  allowed_hosts:
+    - target.example.com
+  disallow_paths:
+    - /api/private
+  max_requests_per_minute: 30   # aligns with typical program rules
+  respect_robots_txt: true
